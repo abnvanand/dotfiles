@@ -3,3 +3,5 @@
 	name = Abhinav Anand
 [credential]
 	helper = cache --timeout=43200
+[core]
+	editor = vim
