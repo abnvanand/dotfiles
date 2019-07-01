@@ -19,8 +19,40 @@ gtk-theme='Adapta-Nokto-Eta-Maia'
 icon-theme='Papirus-Adapta-Nokto-Maia'
 text-scaling-factor=1.0
 
+[org/cinnamon/desktop/keybindings]
+looking-glass-keybinding=@as []
+
 [org/cinnamon/desktop/keybindings/media-keys]
+next=['XF86AudioNext', '<Super>F11']
+pause=['XF86AudioPause', '<Super>F10']
+play=['XF86AudioPlay', '<Super>F12']
+previous=['XF86AudioPrev', '<Super>F9']
+screen-brightness-down=['XF86MonBrightnessDown', '<Super>F2']
+screen-brightness-up=['XF86MonBrightnessUp', '<Super>F3']
+screensaver=['<Super>l', 'XF86ScreenSaver']
 video-outputs=['<Super>p', '<Super>F4']
+volume-down=['XF86AudioLowerVolume', '<Super>F7']
+volume-mute=['XF86AudioMute', '<Super>F6']
+volume-up=['XF86AudioRaiseVolume', '<Super>F8']
+
+[org/cinnamon/desktop/keybindings/wm]
+move-to-center=['<Shift><Super>space']
+move-to-monitor-down=@as []
+move-to-monitor-left=@as []
+move-to-monitor-right=@as []
+move-to-monitor-up=@as []
+move-to-workspace-1=['<Primary><Super>1']
+move-to-workspace-2=['<Primary><Super>2']
+move-to-workspace-3=['<Primary><Super>3']
+move-to-workspace-left=['<Primary><Super>Left']
+move-to-workspace-right=['<Primary><Super>Right']
+push-snap-down=['<Shift><Super>Down']
+push-snap-left=['<Shift><Super>Left']
+push-snap-right=['<Shift><Super>Right']
+push-snap-up=['<Shift><Super>Up']
+switch-to-workspace-1=['<Super>1']
+switch-to-workspace-2=['<Super>2']
+switch-to-workspace-3=['<Super>3']
 
 [org/cinnamon/desktop/sound]
 event-sounds=false
