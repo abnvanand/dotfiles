@@ -1,5 +1,6 @@
 [org/cinnamon]
 applet-cache-updated=1561872012
+command-history=['firefox', 'fire']
 enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:1:separator@cinnamon.org:1', 'panel1:left:2:panel-launchers@cinnamon.org:2', 'panel1:left:3:separator@cinnamon.org:3', 'panel1:right:3:expo@cinnamon.org:4', 'panel1:right:15:show-desktop@cinnamon.org:5', 'panel1:left:6:window-list@cinnamon.org:6', 'panel1:right:1:notifications@cinnamon.org:7', 'panel1:right:2:workspace-switcher@cinnamon.org:8', 'panel1:right:4:windows-quick-list@cinnamon.org:9', 'panel1:right:5:separator@cinnamon.org:10', 'panel1:right:6:systray@cinnamon.org:11', 'panel1:right:7:separator@cinnamon.org:12', 'panel1:right:8:removable-drives@cinnamon.org:13', 'panel1:right:9:network@cinnamon.org:14', 'panel1:right:10:sound@cinnamon.org:15', 'panel1:right:11:power@cinnamon.org:16', 'panel1:right:12:inhibit@cinnamon.org:17', 'panel1:right:13:calendar@cinnamon.org:18', 'panel1:right:14:user@cinnamon.org:19', 'panel1:right:0:pomodoro@gregfreeman.org:20']
 next-applet-id=21
 panel-edit-mode=false
@@ -15,6 +16,7 @@ image-source='xml:///usr/share/gnome-background-properties/gnome.xml'
 
 [org/cinnamon/desktop/interface]
 cursor-blink-time=1200
+cursor-theme='xcursor-breeze'
 gtk-theme='Adapta-Nokto-Eta-Maia'
 icon-theme='Papirus-Adapta-Nokto-Maia'
 text-scaling-factor=1.0
@@ -30,6 +32,7 @@ previous=['XF86AudioPrev', '<Super>F9']
 screen-brightness-down=['XF86MonBrightnessDown', '<Super>F2']
 screen-brightness-up=['XF86MonBrightnessUp', '<Super>F3']
 screensaver=['<Super>l', 'XF86ScreenSaver']
+terminal=['<Primary><Alt>t', '<Super>Return']
 video-outputs=['<Super>p', '<Super>F4']
 volume-down=['XF86AudioLowerVolume', '<Super>F7']
 volume-mute=['XF86AudioMute', '<Super>F6']
@@ -46,6 +49,7 @@ move-to-workspace-2=['<Primary><Super>2']
 move-to-workspace-3=['<Primary><Super>3']
 move-to-workspace-left=['<Primary><Super>Left']
 move-to-workspace-right=['<Primary><Super>Right']
+panel-run-dialog=['<Alt>F2', '<Super>r']
 push-snap-down=['<Shift><Super>Down']
 push-snap-left=['<Shift><Super>Left']
 push-snap-right=['<Shift><Super>Right']
@@ -53,6 +57,9 @@ push-snap-up=['<Shift><Super>Up']
 switch-to-workspace-1=['<Super>1']
 switch-to-workspace-2=['<Super>2']
 switch-to-workspace-3=['<Super>3']
+
+[org/cinnamon/desktop/notifications]
+display-notifications=false
 
 [org/cinnamon/desktop/sound]
 event-sounds=false
@@ -98,6 +105,22 @@ document-font-name='Cantarell 11'
 monospace-font-name='Monospace 11'
 toolkit-accessibility=false
 
+[org/gnome/file-roller/dialogs/extract]
+recreate-folders=true
+skip-newer=false
+
+[org/gnome/file-roller/listing]
+list-mode='as-folder'
+name-column-width=250
+show-path=false
+sort-method='name'
+sort-type='ascending'
+
+[org/gnome/file-roller/ui]
+sidebar-width=200
+window-height=480
+window-width=600
+
 [org/gnome/gnome-screenshot]
 border-effect='none'
 delay=0
@@ -105,11 +128,20 @@ include-border=true
 include-pointer=false
 last-save-directory='file:///home/abnv/Pictures'
 
+[org/gnome/nm-applet/eap/09309d71-46fb-4692-aa23-068ffa10335b]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
 [org/gnome/nm-applet/eap/2d6442e5-03b4-46c4-9a40-bba50aa90dc1]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
+[org/gnome/nm-applet/eap/611db69d-c4b7-4eb0-95cc-bb83e8e26298]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
 [org/gnome/rhythmbox]
+display-page-tree-visible=true
 maximized=true
 position=(0, 0)
 size=(1920, 1021)
@@ -169,10 +201,28 @@ home-icon-visible=false
 trash-icon-visible=true
 
 [org/nemo/window-state]
-geometry='800x550+861+267'
-maximized=true
+geometry='800x550+550+242'
+maximized=false
 sidebar-bookmark-breakpoint=5
 start-with-sidebar=true
+
+[org/x/editor/plugins]
+active-plugins=['docinfo', 'sort', 'time', 'textsize', 'filebrowser', 'modelines', 'spell']
+
+[org/x/editor/plugins/filebrowser/on-load]
+root='file:///'
+tree-view=true
+virtual-root='file:///home/abnv/.cache/.fr-BTJxTd'
+
+[org/x/editor/preferences/ui]
+statusbar-visible=true
+
+[org/x/editor/state/window]
+bottom-panel-size=140
+side-panel-active-page=827629879
+side-panel-size=200
+size=(650, 500)
+state=43908
 
 [org/x/pix/browser]
 filterbar-visible=true
